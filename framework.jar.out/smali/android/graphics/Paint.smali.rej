@@ -1,0 +1,13 @@
+--- framework.jar.out/smali/android/graphics/Paint.smali
++++ framework.jar.out/smali/android/graphics/Paint.smali
+@@ -4943,7 +4943,9 @@
+ 
+     .prologue
+ 
+-    invoke-direct/range {p0 .. p1}, Landroid/graphics/Paint;->setFlymeTypeface(Landroid/graphics/Typeface;)V
++    invoke-direct/range {p0 .. p1}, Landroid/graphics/Paint;->setFlymeTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
++
++    move-result-object p1
+ 
+     const-wide/16 v0, 0x0
+ 
